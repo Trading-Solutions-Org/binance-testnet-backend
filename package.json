@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "start:dev": "env-cmd -f .env nodemon ./src/server.ts",
-    "build": "tsc",
-    "postbuild": "mv node_modules ./dist"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
