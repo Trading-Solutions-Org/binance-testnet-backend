@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
-    "start": "env-cmd -f .env tsc && npm run postbuild && node server.js",
+    "start": "tsc && npm run postbuild && node server.js",
     "start:dev": "env-cmd -f .env nodemon ./src/server.ts",
     "build": "tsc",
     "postbuild": "mv node_modules ./dist"
